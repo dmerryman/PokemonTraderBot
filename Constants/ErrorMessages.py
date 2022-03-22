@@ -1,0 +1,7 @@
+NO_WANTS_FOUND = "No wants found for this user."
+NO_HAVES_FOUND = "No haves found for this user."
+NO_USER_FOUND = "No user found on this server with this name."
+NO_POKEMON_FOUND = "No Pokemon found with that name."
+INVALID_NUM_ARGUMENTS = "Invalid number of arguments for that command."
+INVALID_TYPE_ARGUMENT = "Argument type is invalid."
+INVALID_HAVE_NUM = "Invalid number"

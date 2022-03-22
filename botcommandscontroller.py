@@ -121,14 +121,8 @@ async def unhave(ctx, poke, primaryArg = "", secondaryArg = ""):
     elif not pokemonExists:
         await ctx.send(Constants.ErrorMessages.NO_POKEMON_FOUND)
 
-#async def listOthersWants(ctx, targetID):
-    #if targetID is not None:
-        #await listWants(ctx, targetID)
-    #else:
-        #await ctx.send(Constants.ErrorMessages.NO_USER_FOUND)
+async def clearWants(ctx, userID):
+    raise NotImplementedError
 
-#async def listOthersHaves(ctx, targetUser):
-    #targetID = discordcontroller.getUserID(ctx, targetUser)
-    #if targetID is not None:
-        #await listHaves(ctx, targetID)
-    #else: await ctx.send(Constants.ErrorMessages.NO_USER_FOUND)
+async def clearHaves(ctx, userID):
+    raise NotImplementedError

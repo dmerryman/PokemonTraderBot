@@ -91,3 +91,9 @@ def remove_want(discord_id, dexnum, shiny=False):
 def remove_have(discord_id, dexnum, shiny=False):
     post = {"discord_id": discord_id, "dexnum": dexnum, "shiny": shiny}
     havecollection.delete_one(post)
+
+def clear_wants(discord_id):
+    raise NotImplementedError
+
+def clear_haves(discord_id):
+    raise NotImplementedError

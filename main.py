@@ -103,6 +103,14 @@ async def unwant(ctx, *args):
         await botcommandscontroller.unwant(ctx, args[0])
     else:
         await ctx.send(Constants.ErrorMessages.INVALID_NUM_ARGUMENTS)
+
+@bot.command(name='clear_wants', help='Clears your wants.')
+async def clearwants(ctx, *args):
+    raise NotImplementedError
+
+@bot.command(name='clear_haves', help='Clears your haves.')
+async def clearhaves(ctx, *args):
+    raise NotImplementedError
   
 @bot.event
 async def on_command_error(ctx, error):

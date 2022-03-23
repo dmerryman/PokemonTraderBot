@@ -122,7 +122,15 @@ async def unhave(ctx, poke, primaryArg = "", secondaryArg = ""):
         await ctx.send(Constants.ErrorMessages.NO_POKEMON_FOUND)
 
 async def clearWants(ctx, userID):
-    raise NotImplementedError
+    success = mongodbcontroller.clear_wants(userID)
+    if (success):
+        await ctx.send("Wants cleared.")
+    else:
+        await ctx.send("Wants are already empty.")
 
 async def clearHaves(ctx, userID):
-    raise NotImplementedError
+    success = mongodbcontroller.clear_haves(userID)
+    if (success):
+        await ctx.send("Haves cleared.")
+    else:
+        await ctx.send("Haves are already empty.")

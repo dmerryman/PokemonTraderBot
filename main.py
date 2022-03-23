@@ -106,11 +106,11 @@ async def unwant(ctx, *args):
 
 @bot.command(name='clear_wants', help='Clears your wants.')
 async def clearwants(ctx, *args):
-    raise NotImplementedError
+    await botcommandscontroller.clearWants(ctx, ctx.author.id)
 
 @bot.command(name='clear_haves', help='Clears your haves.')
 async def clearhaves(ctx, *args):
-    raise NotImplementedError
+    await botcommandscontroller.clearHaves(ctx, ctx.author.id)
   
 @bot.event
 async def on_command_error(ctx, error):

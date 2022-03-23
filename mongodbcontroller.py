@@ -93,7 +93,11 @@ def remove_have(discord_id, dexnum, shiny=False):
     havecollection.delete_one(post)
 
 def clear_wants(discord_id):
-    raise NotImplementedError
+    myquery = {"discord_id": discord_id}
+    numDeleted = wantcollection.delete_many(myquery)
+    return numDeleted > 0
 
 def clear_haves(discord_id):
-    raise NotImplementedError
+    myquery = {"discord_id": discord_id}
+    numDeleted = havecollection.delete_many(myquery)
+    return numDeleted > 0
